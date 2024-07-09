@@ -410,17 +410,18 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #222934;
     border-radius: 15px;
+    background-color: #222934;
 }
 #inquiry .wrapper .inquiry-container .left {
     background-color: #333D4C;
     border-top-left-radius: 26px;
     border-bottom-left-radius: 26px;
-    /* width: 500px; */
+    width: 50%;
+    padding: 20px;
 }
 #inquiry .wrapper .inquiry-container .left .image {
-
+    
 }
 #inquiry .wrapper .inquiry-container .left .video-button {
     padding: 15px;
@@ -436,8 +437,10 @@ hr {
 
 }
 #inquiry .wrapper .inquiry-container .right {
-    padding: 8rem;
-    /* width: 500px; */
+    padding: 20px;
+    width: 50%;
+    border-top-right-radius: 26px;
+    border-bottom-right-radius: 26px;
 }
 #inquiry .wrapper .inquiry-container .right ul {
 
@@ -459,7 +462,7 @@ hr {
     margin-bottom: 2rem;
 }
 #inquiry .wrapper .inquiry-container .right ul li .image {
-    width: 60%;
+    
 }
 #inquiry .wrapper .inquiry-container .right ul li h2 a {
 
@@ -672,6 +675,9 @@ footer .footer-container .middle ul li span a:last-child{
     #home header .wrapper .top .middle p a {
         font-size: 14px;
     }
+    #blog .wrapper .bottom ul li .cushion {
+        width: 100%;
+    }
     #spotlight .wrapper .container h1 {
         font-size: 39px;
     }
@@ -734,9 +740,6 @@ footer .footer-container .middle ul li span a:last-child{
      #category .wrapper ul li {
         width: 20%;
     }
-    #inquiry .wrapper .inquiry-container{
-        flex-direction: column;
-    }
     #blog .wrapper .bottom ul{
         flex-direction: column;
     }
@@ -755,16 +758,28 @@ footer .footer-container .middle ul li span a:last-child{
     #blog .wrapper .bottom ul li h5 {
         font-size: 13px;
     }
-    #inquiry .wrapper .inquiry-container .right ul li .image {
+    /*#inquiry .wrapper .inquiry-container .right ul li .image {
         width: 100%;
         margin-bottom: 1rem;
-    }
+    }*/
     footer .wrapper .footer-container .middle{
         width: 40%; 
     }
     footer .wrapper .footer-container .middle ul li h1{
         font-size: 20px;
-    }   
+    } 
+    #inquiry .wrapper .inquiry-container {
+        flex-direction: column;
+    }
+    #inquiry .wrapper .inquiry-container .left {
+        width: 100%;
+        border-top-right-radius: 26px;
+        border-bottom-left-radius: 0px;
+    }  
+    #inquiry .wrapper .inquiry-container .right ul li {
+        line-height: 1rem;
+        margin-bottom: 2rem;
+    }
 }
 @media screen and (max-width: 768px) {
     #home header .wrapper .top .middle{
@@ -785,6 +800,9 @@ footer .footer-container .middle ul li span a:last-child{
     #quality {
         padding: 0rem 0;
     }
+    #blog .wrapper .bottom ul li .cushion {
+        width: 100%;
+    }
     #quality .wrapper .about ul li p {
         font-size: 10px;
     }
@@ -801,9 +819,9 @@ footer .footer-container .middle ul li span a:last-child{
     footer .wrapper .footer-container .right ul li a{
         font-size: 13px;
     }
-    #inquiry .wrapper .inquiry-container .right {
+    /*#inquiry .wrapper .inquiry-container .right {
         padding: 3rem;
-    }
+    }*/
     #spotlight .wrapper .container h1 {
         font-size: 28px;
         line-height: 2.5rem;
@@ -825,6 +843,12 @@ footer .footer-container .middle ul li span a:last-child{
     #spotlight {
         padding: 4rem;
         width: 112%;
+    }
+    #blog .wrapper .bottom ul li .cushion {
+        width: 100%;
+    }
+    #inquiry .wrapper .inquiry-container{
+        width: 120%;
     }
     #design {
         width: 115%;
@@ -848,9 +872,15 @@ footer .footer-container .middle ul li span a:last-child{
     #inquiry .wrapper .inquiry-container .right ul li h2 a {
         font-size: 16px;
     }
-    #inquiry .wrapper .inquiry-container .right ul li button {
+    /*#inquiry .wrapper .inquiry-container .right ul li button {
         padding: 7px;
     }
+    #inquiry .wrapper .inquiry-container .left {
+        background-color: #333D4C;
+        border-top-left-radius: 26px;
+        border-top-right-radius: 23px;
+        border-bottom-left-radius: 0;
+    }*/
     footer .wrapper .footer-container {
         flex-direction: column;
     }
@@ -890,13 +920,16 @@ footer .footer-container .middle ul li span a:last-child{
     #quality .wrapper .about ul li span {
         margin-left: 5rem;
     }
-    #inquiry {
+    /*#inquiry {
         width: 120%;
         padding: 6rem;
         padding-left: 0px;
-    }
+    }*/
     footer .wrapper .bottom p {
         margin-top: 2rem;
+    }
+    #inquiry .wrapper .inquiry-container{
+        width: 150%;
     }
 }
 @media screen and (max-width: 480px) {
@@ -906,25 +939,54 @@ footer .footer-container .middle ul li span a:last-child{
     #home header .wrapper .bottom .right ul {
         display: none;
     }
+    #blog .wrapper .bottom ul li p {
+        line-height: 2rem;
+    }
+    #quality .wrapper .about ul li span {
+        margin-left: 4rem;
+    }
     #category .wrapper ul li div {
-        width: 250%;
-        margin-left: -2rem;
+        width: 167%;
+        margin-left: -1rem;
     }
     #category .wrapper ul {
         line-height: 1rem;
     }
+    #blog .wrapper .bottom ul li .cushion {
+        width: 100%;
+    }
     #product .wrapper .bottom ul {
         flex-direction: column;
+
     }
     #product .wrapper .bottom ul li {
         width: 85%;
+        display: block;
+        align-self: self-end;
     }
     #product .wrapper .top h2 a {
         font-size: 16px;
     }
     #design {
         width: 144%;
-        margin-left: -41px;
+        margin-left: -62px;
+    }
+    #inquiry .wrapper .inquiry-container{
+        width: fit-content;
+    }
+    #inquiry {
+        width: 100%;
+        padding: 0rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    #inquiry .wrapper .inquiry-container .right ul li {
+        line-height: 1rem;
+        margin-bottom: 1rem;
+    }
+    #inquiry .wrapper .inquiry-container .right ul li button {
+        padding: 3px;
+        border-radius: 10px;
     }
     #design .wrapper .top ul {
         gap: 0rem;
@@ -936,10 +998,10 @@ footer .footer-container .middle ul li span a:last-child{
     #design .wrapper .top h1 a {
         font-size: 18px;
     }
-    #inquiry {
+    /*#inquiry {
         width: 146%;
         margin-left: -33px;
-    }
+    }*/
     #blog .wrapper .top h1 a {
         font-size: 14px;
     }

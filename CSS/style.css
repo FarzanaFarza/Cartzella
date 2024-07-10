@@ -56,8 +56,8 @@ h5,h4{
     color: #fff;  
 }
 .wrapper{
-    /* max-width: 1440px; */
-    margin: 0 5rem;
+    margin: 0 auto;
+    width: 90%;
 }
 
 
@@ -164,7 +164,7 @@ h5,h4{
 
 #spotlight { 
     padding: 6rem;
-    width: 100%;
+    /*width: 100%;*/
 }
 #spotlight .wrapper { 
 
@@ -281,21 +281,25 @@ hr {
 #product .wrapper .bottom ul li{
     width: 20%;
 }
-/*#product .wrapper .bottom ul li {
+#product .wrapper .bottom ul li {
 
 }
 #product .wrapper .bottom ul li .one {
-
+    width: 66%;
+}
+#product .wrapper .bottom ul li .one img {
+    display: block;
+    width: 100%;
 }
 #product .wrapper .bottom ul li span {
 
-}*/
+}
 #product .wrapper .bottom ul li h6 {
     color: #fff;
 }
-/*#product .wrapper .bottom ul li h5 {
+#product .wrapper .bottom ul li h5 {
 
-}*/
+}
 #product .wrapper .bottom ul li .two {
     display: flex;
     gap: 1rem;
@@ -308,7 +312,7 @@ hr {
 #product .wrapper .bottom ul li .two button a {
     color: #000;
     text-align: center;
-    padding: 42px;
+    padding: 38px;
 }
 #product .wrapper .bottom ul li .two span {
     display: block;
@@ -320,7 +324,7 @@ hr {
 
 #design {
     width: 100%;
-    padding: 4rem;
+    padding-top: 6rem;
     background-color: #181D25;
 }  
 #design .wrapper {
@@ -375,8 +379,8 @@ hr {
 #quality .wrapper .about ul {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    gap: 2rem;
+    justify-content: space-between;
+    gap: 5rem;
 }
 #quality .wrapper .about ul li {
     text-align: center;
@@ -391,8 +395,9 @@ hr {
     font-size: 20px;
 }
 #quality .wrapper .about ul li p {
-    font-size: 12px;
+    font-size: 14px;
     margin-top: 1rem;
+    line-height: 22px;
 }
 /*quality section styling ends here */
 
@@ -479,7 +484,7 @@ hr {
 
 #blog {
     width: 100%;
-    padding: 4rem;
+    /*padding: 4rem;*/
     background-color: #181D25;
 }
 #blog .wrapper {
@@ -503,7 +508,7 @@ hr {
 }
 #blog .wrapper .bottom ul { 
     display: flex;
-    gap: 8rem;
+    gap: 12rem;
 }
 #blog .wrapper .bottom ul li { 
     line-height: 1rem;
@@ -620,6 +625,12 @@ footer .footer-container .middle ul li span a:last-child{
     #inquiry .wrapper .inquiry-container .left {
         padding-bottom: 42px;
     }
+    /*#product .wrapper .bottom ul {
+        gap: 2rem;
+    }*/
+    #quality .wrapper .about ul li span {
+        margin-left: 7rem;
+    }
 }
 @media screen and (max-width: 1280px) {
     #category .wrapper ul li h3 a {
@@ -628,42 +639,42 @@ footer .footer-container .middle ul li span a:last-child{
     #blog .wrapper .bottom {
         padding: 3rem 0 0 0;
     }
-    #blog .wrapper {
-        margin: 0 5rem;
+    #quality .wrapper .about ul li span {
+        margin-left: 6rem;
     }
     #blog{
         padding: 0 0 4rem 0;
     }
-    #category {
+    /*#category {
         padding: 5rem 0;
-    }
+    }*/
     footer {
         padding: 5rem 0;
     }
-    #product{
+    /*#product{
         padding: 0;
-    }
+    }*/
     #product .wrapper .bottom ul li {
         width: 25%;
     
-}
+    }
 }
 @media screen and (max-width: 1080px) {
-    #home header .wrapper {
+    /*#home header .wrapper {
         margin: 0 3rem;
-    }
+    }*/
     #category .wrapper ul li h3 a {
         font-size: 10px;
     }
-    #product {
+    /*#product {
         padding: 0;
-    }
+    }*/
     #category .wrapper ul li {
         width: 10%;   
     }
-    #product .wrapper {
+    /*#product .wrapper {
         margin: 0 3rem;
-    }
+    }*/
     #quality{
         padding: 4rem 0;
     }
@@ -701,8 +712,8 @@ footer .footer-container .middle ul li span a:last-child{
         margin-top: 2rem;
     }
     #quality .wrapper .about ul li span {
-        width: 23%;
-        margin-left: 4rem;
+        width: 20%;
+        margin-left: 5rem;
     }
     #quality .wrapper .about ul li h1 a {
         font-size: 17px;
@@ -794,20 +805,25 @@ footer .footer-container .middle ul li span a:last-child{
     #design .wrapper .top h1 a {
         font-size: 20px;
     }
+    #quality .wrapper .about ul {
+        flex-direction: column;
+    }
     #quality .wrapper .about ul li span {
-        margin-left: 3rem;
+        margin-left: 9rem;
     }
     #quality {
-        padding: 0rem 0;
+        padding: 3rem 0;
     }
     #blog .wrapper .bottom ul li .cushion {
         width: 100%;
     }
     #quality .wrapper .about ul li p {
-        font-size: 10px;
+        font-size: 15px; 
+        margin-top: 1rem;
+        line-height: 27px;
     }
     #design .wrapper .top ul li button a{
-        font-size: 7px;
+        font-size: 11px;
     }
     #blog .wrapper .top h1 a {
         font-size: 25px;
@@ -842,30 +858,30 @@ footer .footer-container .middle ul li span a:last-child{
     }
     #spotlight {
         padding: 4rem;
-        width: 112%;
+        /*width: 112%;*/
     }
     #blog .wrapper .bottom ul li .cushion {
         width: 100%;
     }
-    #inquiry .wrapper .inquiry-container{
-        width: 120%;
-    }
     #design {
-        width: 115%;
-        padding: 5rem;
+        /*width: 115%;
+        padding: 4rem;*/
         padding-left: 0px;
     }
     #quality .wrapper .about ul li span {
-        margin-left: 2rem;
+        margin-left: 9rem;
+    }
+    #product .wrapper .bottom ul li .two button a {
+        padding: 12px;
     }
 }
 @media screen and (max-width: 980px) {
-    #quality .wrapper .about ul li span {
+    /*#quality .wrapper .about ul li span {
         width: 36%;
     }
     #quality .wrapper .about ul li h1 a {
         font-size: 10px;
-    }
+    }*/
     #inquiry .wrapper .inquiry-container .right ul li p {
         font-size: 13px;
     }
@@ -902,14 +918,11 @@ footer .footer-container .middle ul li span a:last-child{
         font-size: 13px;
     }
     #product .wrapper .bottom ul li .two button a {
-        padding: 9px;
+        padding: 4px;
     }
     #design .wrapper .top ul {
         gap: 1rem;
         line-height: 6rem;
-    }
-    #quality .wrapper .about ul {
-        flex-wrap: wrap;
     }
     #quality .wrapper .about ul li h1 a {
         font-size: 20px;
@@ -918,7 +931,7 @@ footer .footer-container .middle ul li span a:last-child{
         font-size: 12px;
     }
     #quality .wrapper .about ul li span {
-        margin-left: 5rem;
+        margin-left: 7rem;
     }
     /*#inquiry {
         width: 120%;
@@ -927,9 +940,6 @@ footer .footer-container .middle ul li span a:last-child{
     }*/
     footer .wrapper .bottom p {
         margin-top: 2rem;
-    }
-    #inquiry .wrapper .inquiry-container{
-        width: 150%;
     }
 }
 @media screen and (max-width: 480px) {
@@ -943,7 +953,7 @@ footer .footer-container .middle ul li span a:last-child{
         line-height: 2rem;
     }
     #quality .wrapper .about ul li span {
-        margin-left: 4rem;
+        margin-left: 7rem;
     }
     #category .wrapper ul li div {
         width: 167%;
@@ -967,10 +977,10 @@ footer .footer-container .middle ul li span a:last-child{
     #product .wrapper .top h2 a {
         font-size: 16px;
     }
-    #design {
+    /*#design {
         width: 144%;
         margin-left: -62px;
-    }
+    }*/
     #inquiry .wrapper .inquiry-container{
         width: fit-content;
     }
@@ -1005,10 +1015,8 @@ footer .footer-container .middle ul li span a:last-child{
     #blog .wrapper .top h1 a {
         font-size: 14px;
     }
-    #spotlight {
-        padding: 1rem;
-        width: 112%;
-        padding-left: 0px;
+    #home header .wrapper .bottom .middle{
+        margin-left: -2rem;
     }
 }
 
